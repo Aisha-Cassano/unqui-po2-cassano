@@ -3,6 +3,12 @@ package ar.edu.unq.po2.tp7.compositeJuego;
 public class Caballero extends Personaje {
 	
 	// es un leaf
+	
+	public Caballero(Camino camino) {
+		super(camino);
+	}
+	
+	
 	@Override
 	public void caminar(int cantPasos) {
 		int pasosRestantes = cantPasos;
